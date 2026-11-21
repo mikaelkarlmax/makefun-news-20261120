@@ -1,5 +1,7 @@
-// A working news-image-daily entry (Node 22, standard library only): its image is the entry.png beside this file, and
-// the program copies it to /output/entry.png. A starting point, not a winner: replace the image. The gate takes a
+// Entry for make.fun's news-image-20261120 bounty — "The World in One Page", a one-image broadsheet of
+// Friday 20 November 2026: 46 numbered stories, 7 regions, a dotted world map, a UTC timeline and six big
+// numbers, drawn and typeset from poster.html + stories.json and rendered to the entry.png beside this file.
+// This program (Node 22, standard library only) copies that image to /output/entry.png. The gate takes a
 // whole PNG or JPEG of at most 1 MiB and 1024 by 1024 pixels, and the judge sees exactly the bytes copied.
 //
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:

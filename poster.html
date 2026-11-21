@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World in One Page — Friday 20 November 2026</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#22242a; font-family:"DejaVu Sans", Arial, sans-serif; }
+  #poster { width:1024px; height:1024px; margin:0 auto; background:#f6f1e5; color:#16181d;
+            padding:12px 16px 8px 16px; display:flex; flex-direction:column; overflow:hidden; }
+  /* ---------- masthead ---------- */
+  .kick { display:flex; justify-content:space-between; font-size:11px; font-weight:700;
+          letter-spacing:2.5px; color:#7a1f1f; border-bottom:3px solid #16181d; padding-bottom:4px; }
+  .mast { display:flex; align-items:flex-end; justify-content:space-between; margin-top:5px; }
+  .paper { font-family:Georgia, "DejaVu Serif", serif; font-size:40px; font-weight:900; letter-spacing:-.5px; line-height:.95; }
+  .paper small { display:block; font-size:11px; font-weight:700; letter-spacing:3px; color:#44403a; margin-top:3px; font-family:"DejaVu Sans", Arial, sans-serif;}
+  .datebox { text-align:right; }
+  .datebox .dow { font-size:13px; font-weight:800; letter-spacing:4px; color:#7a1f1f; }
+  .datebox .date { font-size:26px; font-weight:900; line-height:1.02; }
+  .datebox .tag { font-size:10px; color:#44403a; margin-top:2px; }
+  .rule { border-top:1.5px solid #16181d; border-bottom:4px double #16181d; height:5px; margin-top:6px; }
+  /* ---------- big numbers ---------- */
+  .bigs { display:flex; gap:8px; margin-top:6px; }
+  .big { flex:1; background:#16181d; color:#f6f1e5; padding:4px 8px 5px; text-align:center; }
+  .big b { display:block; font-size:21px; line-height:1; color:#f2b33d; font-weight:900; }
+  .big span { display:block; font-size:7.9px; line-height:1.22; margin-top:3px; letter-spacing:.2px; }
+  /* ---------- leads ---------- */
+  .leads { display:flex; gap:10px; margin-top:7px; }
+  .lead { border:1.6px solid #16181d; background:#fdfaf2; padding:6px 10px 5px; }
+  .lead .kick2 { font-size:9px; font-weight:800; letter-spacing:2px; color:#7a1f1f; }
+  .lead h2 { font-family:Georgia, serif; font-size:18px; line-height:1.08; margin:2px 0 3px; }
+  .lead p { font-size:10.4px; line-height:1.27; }
+  .lead .num { display:inline-block; background:#7a1f1f; color:#fff; font-weight:900; font-size:11px;
+               padding:1px 6px; margin-right:5px; vertical-align:1px; }
+  .leadA { flex:1.55; }
+  .leadside { flex:1; display:flex; flex-direction:column; gap:7px; }
+  .leadside .lead { flex:1; }
+  .leadside h2 { font-size:14.5px; }
+  .leadside p { font-size:10px; }
+  svg.art { display:block; width:100%; }
+  /* ---------- map ---------- */
+  .mapwrap { margin-top:7px; border:1.6px solid #16181d; background:#e9eef2; position:relative; }
+  .maphead { display:flex; justify-content:space-between; background:#16181d; color:#f6f1e5;
+             font-size:10px; font-weight:800; letter-spacing:2px; padding:3px 8px; }
+  #map { position:relative; height:117px; }
+  #dots { position:absolute; inset:0; }
+  .mk { position:absolute; width:15px; height:15px; margin:-7.5px 0 0 -7.5px; border-radius:50%;
+        background:#b3271e; color:#fff; font-size:8.6px; font-weight:900; text-align:center;
+        line-height:15px; border:1.2px solid #fff; }
+  .regions { display:flex; gap:6px; margin-top:6px; }
+  .reg { flex:1; text-align:center; font-size:9.6px; font-weight:800; letter-spacing:.4px;
+         padding:2px 2px; border:1.3px solid #16181d; background:#fdfaf2; }
+  .reg b { color:#7a1f1f; font-size:12px; }
+  /* ---------- stories ---------- */
+  .stories { margin-top:6px; flex:1; columns:3; column-gap:14px; }
+  .rhead { font-size:9.2px; font-weight:900; letter-spacing:1.4px; color:#fff; background:#7a1f1f;
+           padding:1.5px 6px; margin:4px 0 3px; break-after:avoid; }
+  .rhead:first-child { margin-top:0; }
+  .st { font-size:7.95px; line-height:1.19; margin-bottom:1.6px; break-inside:avoid; }
+  .st b.n { color:#b3271e; font-weight:900; }
+  .st b.h { font-weight:800; }
+  /* ---------- bottom ---------- */
+  .timeline { margin-top:6px; border-top:2px solid #16181d; border-bottom:2px solid #16181d;
+              padding:3px 2px; font-size:9px; line-height:1.4; }
+  .timeline b { color:#7a1f1f; letter-spacing:1px; }
+  .foot { display:flex; gap:10px; margin-top:6px; align-items:stretch; }
+  .datecheck { flex:1.9; border:1.8px dashed #7a1f1f; background:#fdf3e3; padding:4px 9px;
+               font-size:9.4px; line-height:1.35; }
+  .datecheck b { color:#7a1f1f; letter-spacing:1px; }
+  .credit { flex:1; font-size:8.5px; line-height:1.4; color:#44403a; padding-top:2px; }
+</style>
+</head>
+<body>
+<div id="poster">
+
+  <div class="kick"><span>THE ONE-PAGE WORLD</span><span>ONE IMAGE · EVERY REGION · NO STORY FROM ANY OTHER DAY</span><span>EST. TODAY</span></div>
+  <div class="mast">
+    <div class="paper">THE WORLD IN ONE PAGE<small>ALL THE NEWS OF A SINGLE DAY, NUMBERED AND MAPPED</small></div>
+    <div class="datebox">
+      <div class="dow">FRIDAY</div>
+      <div class="date">20 NOVEMBER 2026</div>
+      <div class="tag">46 numbered stories · 7 regions · 1 day — the whole planet, one sheet</div>
+    </div>
+  </div>
+  <div class="rule"></div>
+
+  <div class="bigs" id="bigs"></div>
+
+  <div class="leads">
+    <div class="lead leadA">
+      <div class="kick2">WAR IN EUROPE · THE DAY'S BIGGEST STORY</div>
+      <h2><span class="num">1</span>Russia's biggest barrage of November breaks Kyiv's bridges</h2>
+      <svg class="art" viewBox="0 0 520 92" height="46" aria-label="Bridge over the Dnipro">
+        <rect x="0" y="0" width="520" height="92" fill="#20303e"/>
+        <rect x="0" y="58" width="520" height="34" fill="#2e5f7a"/>
+        <path d="M0 62 Q60 58 120 62 T240 62 T360 62 T520 62" stroke="#7fb2c9" stroke-width="2" fill="none"/>
+        <path d="M30 58 L110 22 L190 58 M330 58 L410 22 L490 58" stroke="#c8cfd6" stroke-width="5" fill="none"/>
+        <path d="M110 22 L110 58 M410 22 L410 58" stroke="#c8cfd6" stroke-width="3"/>
+        <path d="M30 58 H215 M305 58 H490" stroke="#e8b13c" stroke-width="6"/>
+        <path d="M215 58 L250 70 L285 58" stroke="#e8b13c" stroke-width="6" fill="none"/>
+        <circle cx="250" cy="40" r="10" fill="#e2571e"/><circle cx="250" cy="40" r="17" fill="#e2571e" opacity=".35"/>
+        <path d="M70 14 l7 10 M120 8 l7 10 M440 10 l7 10" stroke="#f2b33d" stroke-width="3"/>
+        <text x="12" y="86" fill="#dfe9ef" font-size="12" font-weight="700">THE DNIPRO, KYIV — THREE BRIDGES HIT</text>
+      </svg>
+      <p>Overnight, Russia fired <b>27 ballistic missiles, 84 cruise missiles and 404 drones</b> — its largest strike package of November — killing <b>8 people</b> and cutting power, heat and water. Ballistic missiles damaged the three bridges linking Kyiv's two banks. <b>Two missiles and a drone then fell on Poland (2)</b>.</p>
+    </div>
+    <div class="leadside">
+      <div class="lead">
+        <div class="kick2">CLIMATE · BAY OF BENGAL</div>
+        <h2><span class="num">14</span>Cyclone Akvan slams into the Odisha coast</h2>
+        <svg class="art" viewBox="0 0 300 54" height="28" aria-label="Cyclone spiral">
+          <rect x="0" y="0" width="300" height="54" fill="#274b63"/>
+          <path d="M150 27 m-38 0 a38 20 0 1 1 38 20 a30 15 0 1 0 -30 -15 a21 10 0 1 1 21 -10 a13 6 0 1 0 -13 6" stroke="#f6f1e5" stroke-width="4" fill="none"/>
+          <circle cx="150" cy="27" r="4.5" fill="#f2b33d"/>
+          <path d="M0 48 Q40 42 80 48 T160 48 T240 48 T300 48" stroke="#7fb2c9" stroke-width="3" fill="none"/>
+        </svg>
+        <p>Akvan crossed near <b>Gopalpur</b> at 02:30 UTC at 70–80 km/h, gusting <b>90 km/h</b>. Over <b>300,000 people</b> were evacuated, 423 rescue teams deployed; by afternoon officials reported no major damage.</p>
+      </div>
+      <div class="lead">
+        <div class="kick2">MONEY · THE CRASH</div>
+        <h2><span class="num">35</span>AI rout sends Wall Street into correction</h2>
+        <p>The <b>S&amp;P 500 fell 3.7%</b> and the Dow followed into correction as investors dumped AI and chip shares. Tokyo's Nikkei lost <b>5.06%</b>; even havens fell — gold −3.98%, Bitcoin −4.15%.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mapwrap">
+    <div class="maphead"><span>WHERE IT HAPPENED — 46 STORIES ON ONE MAP</span><span>NUMBERS MATCH THE LIST BELOW</span></div>
+    <div id="map"><div id="dots"></div><div id="markers"></div></div>
+  </div>
+  <div class="regions" id="regions"></div>
+
+  <div class="stories" id="stories"></div>
+
+  <div class="timeline" id="timeline"></div>
+
+  <div class="foot">
+    <div class="datecheck"><b>DATE CHECK —</b> every story on this page happened, or was first reported, on <b>FRIDAY 20 NOVEMBER 2026</b> in some time zone. Nothing here is from 19 November or earlier. Check any number against Reuters, AP, ISW, India's IMD or the national outlet named in its line.</div>
+    <div class="credit">Drawn and typeset by an AI agent in a single sitting on 21 Nov 2026. Sources: Reuters · AP · ISW · IMD · UNICEF · national outlets. The World in One Page is a fictional masthead; the news is real.</div>
+  </div>
+
+</div>
+
+<script>
+const STORIES = [
+ // EUROPE (13)
+ [1,"Europe","KYIV, UKRAINE","Kyiv's bridges hit in biggest barrage of November","27 ballistic + 84 cruise missiles, 404 drones; 8 killed",50.4,30.5],
+ [2,"Europe","POLAND","Russian missiles and a drone come down in Poland","Tusk: deliberate provocation; NATO jets scrambled",50.0,22.0],
+ [3,"Europe","KYIV, UKRAINE","Ukraine deploys experimental laser air defence","Laser system used against drones in the overnight assault",51.4,32.5],
+ [4,"Europe","TATARSTAN, RUSSIA","Ukraine strikes Druzhba pipeline station in Russia","Drones also hit Dorogobuzh chemical plant, Smolensk",55.5,49.1],
+ [5,"Europe","UKRAINE","1,144 children killed or injured in Ukraine this year","UNICEF toll out on World Children's Day",48.4,33.0],
+ [6,"Europe","NARVA, ESTONIA","Estonia to close road crossings with Russia","Tallinn cites sabotage after the Poland incident",59.4,28.2],
+ [7,"Europe","BRUSSELS, BELGIUM","UK and EU sign biggest post-Brexit deals","Food trade, carbon markets, youth mobility agreed",50.8,4.4],
+ [8,"Europe","BERLIN, GERMANY","Merz rejects a new 'Yalta' over Europe's head","No big-power settlement without Europeans, he warns",52.5,13.4],
+ [9,"Europe","ANTALYA, TÜRKIYE","COP31 climate talks run into overtime","Draft drops all mention of fossil fuels; protests",36.9,30.7],
+ [10,"Europe","MOSCOW, RUSSIA","Russia invites Europeans to Moscow talks","Zelensky replies by calling Putin a killer",55.8,37.6],
+ [11,"Europe","TURIN, ITALY","Alcaraz beats Cobolli at ATP Finals","Spaniard stays unbeaten in his Turin group",45.1,7.7],
+ [12,"Europe","CARDIFF, WALES","Price becomes undisputed welterweight champion","Welsh fighter unifies the belts at home",51.5,-3.2],
+ [13,"Europe","LONDON, UK","Cancer pill makes tumours vanish in 1 in 12","Daraxonrasib trial success in pancreatic cancer",52.6,-1.5],
+ // ASIA (9)
+ [14,"Asia","GOPALPUR, INDIA","Cyclone Akvan slams into the Odisha coast","70-80 km/h, gusting 90; 300,000+ evacuated",19.3,84.8],
+ [15,"Asia","THE HAGUE / MYANMAR","World Court: Myanmar committed genocide","ICJ rules on state genocide against the Rohingya",52.1,4.3],
+ [16,"Asia","TOKYO, JAPAN","Japan's core inflation rises to a year high","Food and energy costs drive prices up",35.7,139.7],
+ [17,"Asia","TOKYO, JAPAN","Saudi Arabia and Japan agree oil stockpile deal","Joint crude storage pact as Hormuz risks linger",34.4,137.0],
+ [18,"Asia","DHAKA, BANGLADESH","Political violence flares before Hasina return","Clashes in Dhaka as ex-PM's return nears",23.8,90.4],
+ [19,"Asia","SEOUL, SOUTH KOREA","Ruling party moves to impeach chief justice","Unprecedented push against South Korea's top judge",37.6,127.0],
+ [20,"Asia","NEW DELHI, INDIA","Modi opens first SCO Civilisational Forum","Delhi hosts the bloc's culture-and-civilisation first",28.6,77.2],
+ [21,"Asia","PHNOM PENH, CAMBODIA","US sanctions Cambodia-Myanmar scam networks","Targets enablers of industrial-scale fraud compounds",11.5,104.9],
+ [22,"Asia","SEOUL, SOUTH KOREA","Choi Min-jeong cruises at short-track World Tour","Home favourite advances easily in Seoul",36.0,129.6],
+ // MIDDLE EAST (5)
+ [23,"Middle East","GAZA","Israeli strikes kill Palestinians in Gaza","West Bank violence continues; ceasefire terms stall",31.5,34.5],
+ [24,"Middle East","JURF AL-SAKHAR, IRAQ","Iraqi forces enter Jurf al-Sakhar stronghold","Army enters the militia bastion, first time in 12 years",32.9,44.2],
+ [25,"Middle East","HODEIDAH, YEMEN","Coalition strikes Houthi targets at Hodeidah","Houthis threaten Jeddah and Red Sea ports in reply",14.8,42.9],
+ [26,"Middle East","TEHRAN, IRAN","Trump: Iran wants a deal, not on US terms","Qatar mediates; IRGC warns of strikes beyond region",35.7,51.4],
+ [27,"Middle East","JERUSALEM","16 nations back UK-Australia settler sanctions","Sanctions on settlement entities and aid obstructors",31.8,35.2],
+ // AFRICA (7)
+ [28,"Africa","BAYELSA, NIGERIA","Boat carrying funeral mourners capsizes","Mourners drown in Bayelsa's waterways",4.9,6.1],
+ [29,"Africa","DAR ES SALAAM, TANZANIA","Opposition leader Lissu convicted of sedition","Tundu Lissu guilty in case his party calls political",-6.8,39.3],
+ [30,"Africa","KAMPALA, UGANDA","Uganda restricts gatherings over Ebola threat","Travel curbs as health teams race to contain risk",0.3,32.6],
+ [31,"Africa","TURKANA, KENYA","Kenya begins onshore crude drilling","First wells spudded in the Lokichar basin",3.5,35.9],
+ [32,"Africa","PRETORIA, SOUTH AFRICA","South Africa mourns Mlambo-Ngcuka, 71","First woman deputy president, ex-UN Women chief",-25.7,28.2],
+ [33,"Africa","SIMANDOU, GUINEA","Guinea now world's No. 3 iron ore exporter","Simandou shipments pass South Africa and Canada",8.5,-9.0],
+ [34,"Africa","CAIRO, EGYPT","Egypt clears final IMF review","$2.3bn rides on board vote; $8bn deal ends 15 Dec",30.0,31.2],
+ // NORTH AMERICA (8)
+ [35,"North America","NEW YORK, USA","AI rout sends S&P 500 into correction","S&P -3.7%; Nikkei -5.06%, gold -3.98%, Bitcoin -4.15%",40.7,-74.0],
+ [36,"North America","LOS ANGELES, USA","Jury convicts man of starting Palisades Fire","Rinderknecht guilty of igniting the deadly blaze",34.1,-118.2],
+ [37,"North America","WASHINGTON, USA","US loses its measles elimination status","Authorities confirm the US is no longer measles-free",38.9,-77.0],
+ [38,"North America","WASHINGTON, USA","FBI criminal database reportedly hacked","CNN: crime information center breached amid outages",41.0,-80.5],
+ [39,"North America","CALIFORNIA, USA","California subpoenas Nvidia over China risks","Probe: did chips reach China, investors misled?",37.4,-122.0],
+ [40,"North America","NEW YORK, USA","Visa, Mastercard, JPMorgan disclose vendor breaches","Card giants say outside providers hit; payment networks unaffected",42.3,-72.5],
+ [41,"North America","HUNTSVILLE, TEXAS","Texas execution lasting an hour draws scrutiny","Prolonged lethal injection prompts review calls",30.7,-95.6],
+ [42,"North America","PORT-AU-PRINCE, HAITI","Haiti police kill 34 suspected gang members","Police report toll from capital operations",18.5,-72.3],
+ // SOUTH AMERICA (2)
+ [43,"South America","CERRO DE PASCO, PERU","Magnitude 6.7 earthquake shakes central Peru","Strong quake strikes in the Peruvian Andes",-10.7,-76.3],
+ [44,"South America","BUENOS AIRES, ARGENTINA","Argentina's country risk tops 1,000 points","Bonds slump as the risk premium breaches four figures",-34.6,-58.4],
+ // OCEANIA (2)
+ [45,"Oceania","MELBOURNE, AUSTRALIA","Teen arrested over Signal-run arson campaign","Boy, 17, 'Onepercent', directed arsons, kidnapping",-37.8,145.0],
+ [46,"Oceania","AMERICAN SAMOA","US sells first deep-sea mining leases off Samoa","31.5m acres for $6m; Samoan chiefs sue",-14.3,-170.7]
+];
+const BIGS = [
+ ["515","missiles & drones fired at Ukraine overnight"],
+ ["3","Kyiv bridges over the Dnipro damaged"],
+ ["300,000+","people evacuated ahead of Cyclone Akvan"],
+ ["90 km/h","Akvan's gusts crossing the Odisha coast"],
+ ["-3.7%","S&P 500 fall, into correction territory"],
+ ["6.7","magnitude of Peru's earthquake"]
+];
+const TIMELINE = [
+ ["00:40",1],["02:30",14],["04:15",2],["07:05",5],["09:00",15],["10:30",7],
+ ["11:00",20],["12:45",25],["14:30",35],["16:45",27],["18:05",43],["20:10",9],["22:40",36]
+];
+const MAPROWS = [
+"................................................................................",
+"..........##..........##..................######................................",
+"........######......#####..........#########################....................",
+".......########....######......##################################...............",
+"......##########..#######....#####################################..............",
+".....###############.#####..#######################################.............",
+"....#######################.#####..######.########################............",
+"....######################..####......############################............",
+".....####################....#..##..#############################.............",
+"......##################..........###############################.............",
+".......################..........##############################...............",
+"........##############............####.########################...............",
+".........############..............############################................",
+"..........##########................##################..######................",
+"...........########.................#################.....###.................",
+"............######..................################......##..................",
+"............#####...................###############...........................",
+".............####...................#############......#......................",
+".............###.....................###########......##......................",
+".............##......................#########........###.....................",
+"..............##......................#######.........####....................",
+"..............###......................#####..........#####...................",
+"...............###.....................####...........######..................",
+"...............####....................###............########................",
+"...............#####...................##.............##########..............",
+"................####...................................########...............",
+"................###.....................................######................",
+"................###......................................####.................",
+"................##.......................................###..................",
+"................##.....................................................##.....",
+"................#......................................................##.....",
+"................#.............................................................",
+"................................................................................",
+"................................................................................",
+"..........................####################..................................",
+"................................................................................"
+];
+// big numbers
+document.getElementById('bigs').innerHTML = BIGS.map(b =>
+  `<div class="big"><b>${b[0]}</b><span>${b[1]}</span></div>`).join('');
+// dotted world map: equirectangular, lon -180..180, lat 84..-60
+const dots = document.getElementById('dots');
+let circles = '';
+MAPROWS.forEach((row, r) => {
+  [...row].forEach((ch, c) => {
+    if (ch === '#') {
+      const x = (c + 0.5) / 72 * 100, y = (r + 0.5) / 36 * 100;
+      circles += `<circle cx="${x.toFixed(2)}" cy="${y.toFixed(2)}" r="0.42" fill="#5b7183"/>`;
+    }
+  });
+});
+dots.innerHTML = `<svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">${circles}</svg>`;
+// markers
+document.getElementById('markers').innerHTML = STORIES.map(s => {
+  const x = (s[6] + 180) / 360 * 100, y = (84 - s[5]) / 144 * 100;
+  return `<div class="mk" style="left:${x.toFixed(2)}%;top:${y.toFixed(2)}%">${s[0]}</div>`;
+}).join('');
+// region strip (counts computed from STORIES)
+const order = ["Europe","Asia","Middle East","Africa","North America","South America","Oceania"];
+const counts = {}; STORIES.forEach(s => counts[s[1]] = (counts[s[1]] || 0) + 1);
+document.getElementById('regions').innerHTML = order.map(r =>
+  `<div class="reg">${r.toUpperCase()} · <b>${counts[r]}</b></div>`).join('') +
+  `<div class="reg" style="background:#16181d;color:#f6f1e5">TOTAL · <b style="color:#f2b33d">${STORIES.length} STORIES</b></div>`;
+// story list grouped by region
+let html = '', last = '';
+STORIES.forEach(s => {
+  if (s[1] !== last) { html += `<div class="rhead">${s[1].toUpperCase()} — ${counts[s[1]]} STORIES</div>`; last = s[1]; }
+  html += `<div class="st"><b class="n">${s[0]}.</b> <b class="h">${s[3]}</b> — ${s[4]} <i>(${s[2].toLowerCase()})</i></div>`;
+});
+document.getElementById('stories').innerHTML = html;
+// timeline
+const byN = {}; STORIES.forEach(s => byN[s[0]] = s);
+const TL_LABELS = {1:"Kyiv barrage begins",14:"Akvan landfall",2:"missiles in Poland",5:"UNICEF child toll",15:"ICJ genocide ruling",7:"EU-UK deals signed",20:"SCO forum opens",25:"Hodeidah strikes",35:"Wall Street rout",27:"settler sanctions backed",43:"Peru quake",9:"COP31 into overtime",36:"Palisades verdict"};
+document.getElementById('timeline').innerHTML = '<b>THE DAY IN UTC —</b> ' + TIMELINE.map(t => {
+  return `${t[0]} <b class="n" style="color:#b3271e">${t[1]}</b> ${TL_LABELS[t[1]]}`;
+}).join(' &nbsp;·&nbsp; ');
+</script>
+</body>
+</html>
